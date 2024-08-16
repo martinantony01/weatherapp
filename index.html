@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="app-heading">Weather App</h1>
+        <div class="weatherParent">
+            <div class="searchBox">
+                <div class="iconContainer">
+                    <i class="fas fa-map-marker-alt locationIcon"></i>
+                </div>
+                <input class="inputBox" type="text" placeholder="Enter Location">
+                <button class="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <p class="error">Enter Location</p>
+            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="conditionImage" alt="Weather Condition">
+            <h2 class="cityName">City Name</h2>
+            <h1 class="temperature">0°C</h1>
+            <h2 class="condition">----</h2>
+            <div class="bottomRow">
+                <h2 class="humidity">Humidity: 0%</h2>
+                <h2 class="windSpeed">Wind Speed: 0 km/h</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/RETROWAVE-OASIS-33331.png'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-heading {
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Archivo Black';
+    background: linear-gradient(to right, #3399ff, #2d73bd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.weatherParent {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.cityName {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.conditionImage {
+    width: 64px;
+    height: 64px;
+}
+
+.temperature {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.condition {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.bottomRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.humidity, .windSpeed {
+    font-size: 1rem;
+}
+
+.error {
+    display: none;
+    color: red;
+    margin-top: 10px;
+}
+
+.errorImage {
+    display: none;
+    margin-top: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.searchBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.iconContainer {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+}
+
+.locationIcon {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.inputBox {
+    width: 100%;
+    height: 35px;
+    border: none;
+    padding: 0 10px 0 40px; 
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: black;
+    outline: none;
+}
+
+.searchBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.searchBtn .fas {
+    font-size: 20px;
+    color: #007BFF; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .weatherParent {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .searchBox input, .searchBox button {
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .weatherParent {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .searchBox input, .searchBox button {
+        height: 25px;
+    }
+}
